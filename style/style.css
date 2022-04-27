@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    background: #e3e3e3;
+}
+
+.navbar {
+    background-color: rgb(70, 37, 255);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.add-btn a{
+    background-color: rgb(243, 186, 111);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.4em;
+}
+.add-btn{
+    margin: 3px 0 5px 50%;
+}
+.navbar h2{
+    margin: 0;
+}
+
+.container{
+    padding: 12px;
+    display: flex;
+}
+.blogs{
+    width: 60%;
+    padding: 0px 20px;
+}
+#blog-details{
+    background-color: #ffff;
+    margin:0px 10px;
+    overflow-wrap: break-word;
+}
+.card {
+    background-color: #ffff;
+    margin-bottom: 20px;
+    border: 1px solid #00000012;
+    border-radius: 2px;
+    padding: 5px;
+}
+.card img{
+    width: 38%;
+    border-radius: 2px;
+}
+.blog-details{
+    width: 60%;
+    float: right;
+}
+.sidebar{
+    text-align: center;
+    width: 40%;
+}
+.sidebar h2{
+    margin: 0 0 10px 0px;
+    background: #4625ff;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+}
+.sidebarBody{
+    background-color: #ffff;
+    padding:20px;
+    border-radius: 3px;
+}
+.image-details{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+
+form {
+    width: 683px;
+    display: block;
+    margin: 5px auto;
+
+}
+form label{
+    display: block;
+    width: 100%;
+}
+
+
+
+form label h4{
+    padding: 4px 0px 4px 12px;
+    margin: 0.8em 0em;
+    font-family: monospace;
+    text-transform: uppercase;
+    background: #cfe8ff;
+    width: 100%;
+    font-size: 1.25em;
+    border-radius: 1px;
+}
+
+form #text-area-title{
+    display: block!important;
+}
+form #text-area-title textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    outline:none;
+    padding: 15px;
+    border: 1px solid #0000002e;
+}
+
+#btn{
+    width: 160px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+form label input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border: 1px solid #0000002e;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: 0.3s;
+}
+
+.content{
+    line-height:1.5em;
+}
+
+#readBtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background: #4625ff;
+    padding: 4px 10px;
+    border-radius: 0.1em;
+}
+
+footer{
+    background-color: rgb(70, 37, 255);
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+
+
+/* RESPONSIVE PARAMETRES */
+
+@media only screen and (max-width:1270px) {
+    .blog-details{
+        width: 100%;
+        float: none;
+    }
+    .card img{
+        width: 100%;
+        border-radius: 2px;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar h2{
+       margin-bottom: 20px;
+    }
+    .add-btn{
+        margin: auto;
+        display: block;
+    }
+    .container{
+        overflow: hidden;
+        display: block;
+    }
+    .blogs{
+        width: auto;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container{
+        overflow: hidden;
+        display: block;
+    }
+    .navbar{
+        display: block;
+    }
+    .navbar h2{
+        margin-bottom: 20px;
+    }
+    .add-btn{
+        margin: auto;
+        display: block;
+    }
+
+    .container{
+         padding: 12px;
+        display: block;
+    }
+    .blogs{
+        width: auto;
+        padding: 10px;
+    }
+    .sidebar{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .blog-details{
+        width: 100%;
+        float: none;
+        padding: 1px;
+    }
+    .card img{
+        width: 100%;
+        border-radius: 2px;
+    }
+
+  } 
